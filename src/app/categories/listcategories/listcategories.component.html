@@ -1,0 +1,25 @@
+<p>listcategories works!</p>
+<div class="container">
+    <button type="button" class="btn btn-success">Ajouter</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom categories</th>
+                <th>Image categories</th>
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+        <tr class="table-life" *ngFor="let p of categories">
+        <th scope="row">{{p._id}}</th>
+        
+        <td><img src={{p.imagecategorie}} width="120" height="60"></td>
+        <button type="button" class="btn btn-primary">Modifier</button>
+        <button type="button" class="btn btn-danger">Supprimer</button>
+            
+</tr>    
+        </tbody>
+    </table>
+</div>

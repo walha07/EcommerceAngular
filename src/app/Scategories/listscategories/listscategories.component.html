@@ -1,0 +1,25 @@
+<p>Liste des scategories</p>
+<div class="container">
+    <button type="button" class="btn btn-success">Ajouter</button>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>categoriesID</th>
+                <th>Image</th>
+                <th>Nom scategories</th>
+                <th>Modifier</th>
+                <th>Supprimer</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-life" *ngfor="let p of scategories">
+                <td>{{p.categoriesID}}</td>
+                <td><img src="{{p.imagescat}} "width="120" height="60"></td>
+                <td>{{p.nomscategorie}}</td>
+                <button type="button" class="btn btn-primary">Modifier</button>
+                <button type="button" class="btn btn-danger">Supprimer</button>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
